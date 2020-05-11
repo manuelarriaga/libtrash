@@ -143,13 +143,13 @@ When you try to delete a file in a certain directory where you had
 previously deleted another file with the same name, libtrash stores the new
 file with a different name, in order to preserve both files. E.g.:
 
-$ touch test 
-$ rm test 
-$ ls Trash/ test 
-$ touch test 
-$ rm test 
-$ ls Trash/ 
-test test[1] <-- The file we deleted first wasn't lost. 
+    $ touch test 
+    $ rm test 
+    $ ls Trash/ test 
+    $ touch test 
+    $ rm test 
+    $ ls Trash/ 
+    test test[1] <-- The file we deleted first wasn't lost. 
 
 libtrash keeps generating new names until no name collision occurs. The
 deletion of a file never causes the permanent loss of a previously "deleted"
