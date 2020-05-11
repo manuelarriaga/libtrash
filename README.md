@@ -77,7 +77,9 @@ default, only calls to the first two functions are intercepted.
 
 ----------------------------------------------------------------------------
 
-IMPORTANT NOTE 1: The wrappers of the "open functions" (fopen, freopen and
+**Some notes:**
+
+1- The wrappers of the "open functions" (fopen, freopen and
 open) behave differently from the real functions in an important way when
 they are asked to open - in either write-mode or read-plus-write-mode - a
 file considered "worthy" of having a copy of itself stored in the trash can
@@ -90,7 +92,7 @@ directory which holds the file for them to succeed. Usually, you only have
 write-permission to files in directories to which you also have
 write-permission, so this shouldn't be a huge problem in most cases.
 
-IMPORTANT NOTE 2: When a file on a partition / filesystem other than the one
+2- When a file on a partition / filesystem other than the one
 in which your trash can resides is destroyed, libtrash can't just use the
 GNU libc function rename() to move it into your trash can: it must copy that
 file byte-after-byte into your trash can and then delete the original. To
@@ -100,7 +102,7 @@ files you can't read, hopefully that won't prove a big problem, either.
 However, be warned that copying a file (especially a large one) will take a
 lot longer than the time which would be required to simply rename it.
 
-IMPORTANT NOTE 3: If you are running a web (or other) server as user
+3- If you are running a web (or other) server as user
 'nobody', then you should ensure that libtrash is not active for that
 process. The issue is that by default libtrash refuses to remove files if
 it will not be able to save them in that user's trash can. The 'nobody'
