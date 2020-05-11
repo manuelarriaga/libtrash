@@ -11,8 +11,8 @@ Licensed under the GNU General Public License version 2. See the file COPYING fo
 details.
 
 
-Version: 3.5 (2020/May)
--------
+**Version 3.5 (2020/May)**
+
 
 ## Quick start
 
