@@ -18,8 +18,7 @@ details.
 
 This file has grown hopelessly long and verbose over the last 19
 (ouch) years. Unless you are particularly curious about libtrash,
-consider jumping directly to the section "Configuring, compiling,
-installing and activating libtrash".
+consider jumping directly to the section [on how to install and set it up](##Configuring, compiling, installing and activating libtrash)
 
 
 ## Regarding Firefox, Chrome and other browsers based on their code:
